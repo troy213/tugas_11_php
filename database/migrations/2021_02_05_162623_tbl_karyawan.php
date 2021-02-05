@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class TblKatalog extends Migration
+class TblKaryawan extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class TblKatalog extends Migration
      */
     public function up()
     {
-      Schema::create('tbl_katalog', function (Blueprint $table) {
+      Schema::create('tbl_karyawan', function (Blueprint $table) {
         $table->increments('id');
-        $table->string('nama_produk');
-        $table->string('berat');
-        $table->float('harga');
-        $table->string('gambar');
-        $table->string('keterangan');
+        $table->string('nama');
+        $table->string('jabatan');
+        $table->integer('umur');
+        $table->text('alamat');
+        $table->string('foto');
       });
     }
 

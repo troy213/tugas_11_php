@@ -16,4 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/getData', 'App\Http\Controllers\Barang@getData');
+Route::get('/getData', 'App\Http\Controllers\Karyawan@getData');
+Route::post('/simpan', 'App\Http\Controllers\Karyawan@simpan');
+Route::post('/ubah', 'App\Http\Controllers\Karyawan@ubah');
+Route::get('/hapus/{id}', 'App\Http\Controllers\Karyawan@hapus');
+Route::get('/baca/{id}', 'App\Http\Controllers\Karyawan@baca');
