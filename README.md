@@ -9,3 +9,4 @@
 4. Buatlah API hapus data dari database yang telah dibuat dan wajib menggunakan framework laravel.
 5. Buatlah API ubah data dari database yang telah dibuat dan wajib menggunakan framework laravel.
 6. Buatlah API baca data dari database yang telah dibuat dan wajib menggunakan framework laravel.
+
